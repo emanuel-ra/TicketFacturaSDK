@@ -27,7 +27,7 @@ namespace TicketFacturaSDK.Utils
                 XmlNamespaceManager tfd = new XmlNamespaceManager(xmlDocument.NameTable);
 
                 nsm.AddNamespace("cfdi", CFDI_NAMESPACE);
-                nsm.AddNamespace("tfd", CFDI_TFD_NAMESPACE);
+                tfd.AddNamespace("tfd", CFDI_TFD_NAMESPACE);
 
                 // Comprobante 
                 XmlNode nodeComprobante = xmlDocument.SelectSingleNode("//cfdi:Comprobante", nsm);
